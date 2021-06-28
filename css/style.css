@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.header {
+  background-image: url("../image/background-macbook.jpg");
+  padding: 51px 22% 240px;
+  background-size: cover;
+  position: relative;
+}
+.header .header-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-head nav .menu {
+  display: flex;
+  align-items: center;
+}
+.header .header-head nav .menu .nav-button {
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.header .header-head nav .menu .nav-button:hover {
+  color: gainsboro;
+}
+.header .header-head nav .menu span {
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+.header .header-head nav .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111111e6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: block;
+  text-align: center;
+}
+.header .header-head nav .sidenav a {
+  margin-bottom: 20px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.header .header-head nav .sidenav a:hover {
+  color: #f1f1f1;
+}
+.header .header-head nav .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.header .header-content .tittle {
+  padding: 130px 18% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-content .tittle h1 {
+  font-size: 70px;
+  font-family: "Open Sans";
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+.header .header-content .tittle span {
+  font-size: 70px;
+  font-family: "Open Sans";
+  color: #f7600e;
+  font-weight: bold;
+}
+.header .header-content .header-content-details {
+  padding: 0 15%;
+}
+.header .header-content .header-content-details p {
+  font-size: 25px;
+  font-family: "Open Sans";
+  color: white;
+  text-align: center;
+}
+.header .header-content .header-content-button {
+  text-align: center;
+  margin-top: 72px;
+}
+.header .header-content .header-content-button button {
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  cursor: pointer;
+}
+.header .header-content .header-content-button .hire-us {
+  padding: 19px 77px;
+  background-color: #f7600e;
+  color: white;
+  margin-right: 10px;
+  border: none;
+}
+.header .header-content .header-content-button .our-works {
+  padding: 19px 60px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid gray;
+}
+.header .header-content .button-more {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .header-content .button-more i {
+  color: white;
+  border: 1px solid white;
+  padding: 5px 7px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.header .header-content .button-more i:hover {
+  background: gray;
+}
+
+main .description {
+  padding: 100px 20% 100px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 2;
+}
+main .description .description-element {
+  text-align: center;
+  margin: 0 30px;
+}
+main .description .description-element .image {
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  padding: 42px;
+  width: 30%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+main .description .description-element .image img {
+  height: 58px;
+  width: 50px;
+}
+main .description .description-element h2 {
+  font-size: 16px;
+  font-family: "Open Sans";
+  margin-top: 20px;
+}
+main .description .description-element p {
+  font-size: 14px;
+  font-family: "Open Sans";
+  padding: 0 8px;
+}
+main .subscribe {
+  padding: 85px 16%;
+  background-image: url("../image/tablet.jpg");
+}
+main .subscribe input {
+  width: 41%;
+  padding: 15px;
+  margin-left: 20%;
+  margin-right: 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+main .subscribe button {
+  padding: 15px 7%;
+  background: #f7600e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

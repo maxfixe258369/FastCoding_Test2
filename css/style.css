@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  background-image: url("../image/background-macbook.jpg");
+  background-image: url("../image/background_macbook.jpg");
   padding: 51px 22% 240px;
   background-size: cover;
   position: relative;
@@ -64,20 +64,20 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-.header .header-content .tittle {
+.header .header-content .title {
   padding: 130px 18% 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header .header-content .tittle h1 {
+.header .header-content .title h1 {
   font-size: 70px;
   font-family: "Open Sans";
   color: white;
   font-weight: bold;
   margin: 0;
 }
-.header .header-content .tittle span {
+.header .header-content .title span {
   font-size: 70px;
   font-family: "Open Sans";
   color: #f7600e;
@@ -109,11 +109,38 @@ body {
   margin-right: 10px;
   border: none;
 }
+.header .header-content .header-content-button .hire-us {
+  background: linear-gradient(135deg, #fff 50%, #f7600e 50%);
+  position: relative;
+}
+.header .header-content .header-content-button .hire-us:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #f7600e 50%, #fff 50%);
+  z-index: -1;
+}
+.header .header-content .header-content-button .hire-us, .header .header-content .header-content-button .hire-us:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 0.8s;
+}
+.header .header-content .header-content-button .hire-us:hover, .header .header-content .header-content-button .hire-us:hover:after {
+  background-position: 0;
+  color: #f7600e;
+}
 .header .header-content .header-content-button .our-works {
   padding: 19px 60px;
   background-color: transparent;
   color: white;
   border: 1px solid gray;
+}
+.header .header-content .header-content-button .our-works:hover {
+  background-color: white;
+  color: black;
 }
 .header .header-content .button-more {
   position: absolute;
@@ -149,6 +176,7 @@ main .description .description-element .image {
   width: 30%;
   margin-left: 50%;
   transform: translateX(-50%);
+  box-sizing: unset;
 }
 main .description .description-element .image img {
   height: 58px;
@@ -187,6 +215,561 @@ main .subscribe button {
   font-size: 16px;
   font-family: "Open Sans";
   font-weight: 600;
+}
+main .subscribe button {
+  background: linear-gradient(135deg, #fff 50%, #f7600e 50%);
+  position: relative;
+}
+main .subscribe button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #f7600e 50%, #fff 50%);
+  z-index: -1;
+}
+main .subscribe button, main .subscribe button:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 0.8s;
+}
+main .subscribe button:hover, main .subscribe button:hover:after {
+  background-position: 0;
+  color: #f7600e;
+}
+main .ourworks {
+  padding: 95px 20%;
+}
+main .ourworks .ourworks-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .ourworks .ourworks-title h3 {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 35px;
+}
+main .ourworks .ourworks-title span {
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-weight: 600;
+  color: #f7600e;
+}
+main .ourworks .ourworks-content {
+  text-align: center;
+  padding: 0 25%;
+}
+main .ourworks .ourworks-content p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  margin-top: 20px;
+}
+main .ourworks .ourworks-image {
+  margin-top: 90px;
+}
+main .ourworks .ourworks-image .image-group {
+  display: flex;
+  justify-content: space-around;
+}
+main .ourworks .ourworks-image .image-group .image-element {
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .ourworks .ourworks-image .image-group .image-element .show-project {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #f7600e;
+  opacity: 0.8;
+  text-align: center;
+  padding: 25% 10%;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+main .ourworks .ourworks-image .image-group .image-element .show-project .project-name {
+  font-family: "Open Sans";
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+main .ourworks .ourworks-image .image-group .image-element .show-project p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+}
+main .ourworks .ourworks-image .image-group .image-element .show-project button {
+  color: #f7600e;
+  background-color: white;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+}
+main .ourworks .ourworks-image .image-group .image-element .show-project button:hover {
+  color: blue;
+}
+main .ourworks .ourworks-image .image-group .image-element:hover .show-project {
+  transform: translateY(0);
+}
+main .ourworks .ourworks-more {
+  text-align: center;
+  margin-top: 100px;
+}
+main .ourworks .ourworks-more .more {
+  padding: 15px 60px;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+}
+main .ourworks .ourworks-more .more:hover {
+  background-color: gainsboro;
+  opacity: 0.8;
+}
+main .avatar {
+  background-image: url("../image/women.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+main .avatar .carousel-inner {
+  padding: 0 22%;
+}
+main .avatar .carousel-inner img {
+  border-radius: 80px;
+}
+main .avatar .carousel-inner p {
+  font-family: "Open Sans";
+  font-size: 25px;
+  color: white;
+  font-style: italic;
+  margin-top: 50px;
+  padding: 0 120px;
+  line-height: 2;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+main .avatar .carousel-inner span {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+main .avatar .carousel-control-prev {
+  left: 100px;
+}
+main .avatar .carousel-control-next {
+  right: 100px;
+}
+@media screen and (max-width: 1600px) {
+  main .ourteam {
+    padding: 95px 16% !important;
+  }
+}
+main .ourteam {
+  padding: 95px 18%;
+  line-height: 2;
+}
+main .ourteam .ourteam-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .ourteam .ourteam-title h4 {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 35px;
+}
+main .ourteam .ourteam-title span {
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-weight: 600;
+  color: #f7600e;
+}
+main .ourteam .ourteam-content {
+  text-align: center;
+  padding: 0 25%;
+}
+main .ourteam .ourteam-content p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  margin-top: 20px;
+}
+main .ourteam .ourteam-image .image-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 120px;
+}
+main .ourteam .ourteam-image .image-group .image-group-element {
+  cursor: pointer;
+  text-align: center;
+}
+main .ourteam .ourteam-image .image-group .image-group-element > img {
+  width: 200px;
+  height: 250px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+main .ourteam .ourteam-image .image-group .image-group-element .ourteam-name {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Open Sans";
+}
+main .ourteam .ourteam-image .image-group .image-group-element .icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+main .ourteam .ourteam-image .image-group .image-group-element .icon > img {
+  width: 25px;
+  margin: 0 10px;
+}
+main .ourteam .ourteam-image .image-group .image-group-element p {
+  padding: 0 10%;
+  font-size: 14px;
+  font-family: "Open Sans";
+  margin-top: 20px;
+}
+main .hireus {
+  background-image: url("../image/background_hireus.jpg");
+  background-size: cover;
+  padding: 95px 20%;
+  line-height: 2;
+}
+main .hireus .hireus-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .hireus .hireus-title h5 {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 35px;
+  color: white;
+}
+main .hireus .hireus-title span {
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-weight: 600;
+  color: #f7600e;
+}
+main .hireus .hireus-content {
+  text-align: center;
+  padding: 0 25%;
+}
+main .hireus .hireus-content p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  margin-top: 20px;
+  color: white;
+}
+main .hireus .hireus-input {
+  margin-top: 100px;
+  text-align: center;
+  padding: 0 10%;
+}
+main .hireus .hireus-input .group-input {
+  display: flex;
+  justify-content: space-between;
+}
+main .hireus .hireus-input .group-input > input {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+main .hireus .hireus-input .group-input .mail {
+  flex: 1;
+  margin-right: 20px;
+  padding: 8px 15px;
+}
+main .hireus .hireus-input .group-input .subject {
+  flex: 1;
+  padding: 8px 15px;
+}
+main .hireus .hireus-input .message {
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px 0 200px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+main .hireus .hireus-input .hireus-input-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+main .hireus .hireus-input .hireus-input-bottom button {
+  padding: 7px 70px;
+  background-color: #f7600e;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  cursor: pointer;
+}
+main .hireus .hireus-input .hireus-input-bottom button:hover {
+  opacity: 0.8;
+}
+main .hireus .hireus-input .hireus-input-bottom .icon img {
+  margin: 0 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+main .hireus .hireus-input .hireus-input-bottom .icon img:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #3b434c;
+  padding: 50px 20%;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.footer .footer-content span {
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 1024px) {
+  .header .header-content .title {
+    padding: 130px 16%;
+  }
+  .header .header-content .title h1 {
+    font-size: 50px;
+  }
+  .header .header-content .title span {
+    font-size: 50px;
+  }
+  .header .header-content .header-content-details {
+    padding: 0;
+  }
+  .header .header-content .header-content-details p {
+    font-size: 16px;
+  }
+  .header .header-content .header-content-button .hire-us {
+    padding: 19px 60px;
+  }
+  .header .header-content .header-content-button .our-works {
+    padding: 19px 48px;
+  }
+
+  main .description .description-element {
+    margin: 0 15px;
+  }
+  main .ourworks {
+    padding: 95px 16%;
+  }
+  main .ourworks .ourworks-content {
+    padding: 0 10%;
+  }
+  main .ourworks .ourworks-image .image-group .image-element img {
+    width: 150px;
+    height: 200px;
+  }
+  main .ourworks .ourworks-image .image-group .image-element .show-project {
+    padding: 0 10%;
+  }
+  main .ourworks .ourworks-image .image-group .image-element .show-project .project-name {
+    font-size: 16px;
+  }
+  main .ourworks .ourworks-image .image-group .image-element .show-project p {
+    margin: 0;
+    font-size: 12px;
+  }
+  main .ourworks .ourworks-image .image-group .image-element .show-project button {
+    padding: 0 20px;
+    font-size: 12px;
+  }
+  main .avatar .carousel-inner {
+    padding: 0 12%;
+  }
+  main .avatar .carousel-inner p {
+    font-size: 16px;
+  }
+  main .avatar .carousel-control-prev {
+    left: 0;
+  }
+  main .avatar .carousel-control-next {
+    right: 0;
+  }
+  main .ourteam .ourteam-content {
+    padding: 0 10%;
+  }
+  main .ourteam .ourteam-image .image-group .image-group-element {
+    margin: 0 10px;
+  }
+  main .ourteam .ourteam-image .image-group .image-group-element > img {
+    width: 150px;
+    height: 150px;
+  }
+  main .ourteam .ourteam-image .image-group .image-group-element .ourteam-name {
+    font-size: 18px;
+  }
+  main .ourteam .ourteam-image .image-group .image-group-element p {
+    padding: 0;
+  }
+  main .hireus {
+    padding: 95px 10%;
+  }
+  main .hireus .hireus-content {
+    padding: 0 10%;
+  }
+
+  .footer .footer-content span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 51px 5% 240px;
+  }
+  .header .header-content .title {
+    padding: 50px 10%;
+  }
+  .header .header-content .title h1 {
+    font-size: 30px;
+  }
+  .header .header-content .title span {
+    font-size: 30px;
+  }
+  .header .header-content .header-content-details {
+    padding: 0;
+  }
+  .header .header-content .header-content-details p {
+    font-size: 14px;
+  }
+  .header .header-content .header-content-button {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    align-items: center;
+  }
+  .header .header-content .header-content-button .hire-us {
+    padding: 19px 50px;
+    margin-bottom: 10px;
+  }
+  .header .header-content .header-content-button .our-works {
+    padding: 19px 30px;
+  }
+
+  main .description {
+    flex-direction: column;
+  }
+  main .description .description-element p {
+    font-size: 12px;
+  }
+  main .subscribe {
+    padding: 85px 10%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+  }
+  main .subscribe input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  main .ourworks {
+    padding: 95px 16%;
+  }
+  main .ourworks .ourworks-content {
+    padding: 0;
+  }
+  main .ourworks .ourworks-content p {
+    font-size: 12px;
+  }
+  main .avatar .carousel-inner p {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+  main .ourteam {
+    padding: 95px 10% !important;
+  }
+  main .ourteam .ourteam-title h4 {
+    font-size: 30px;
+  }
+  main .ourteam .ourteam-title span {
+    font-size: 30px;
+  }
+  main .ourteam .ourteam-content p {
+    font-size: 12px;
+  }
+  main .ourteam .ourteam-image .image-group {
+    flex-wrap: wrap;
+  }
+  main .ourteam .ourteam-image .image-group .image-group-element {
+    padding: 20px;
+    margin: 10px 0;
+    border-bottom: 1px solid gainsboro;
+  }
+  main .ourteam .ourteam-image .image-group .image-group-element p {
+    font-size: 12px;
+  }
+  main .hireus {
+    padding: 95px 10%;
+  }
+  main .hireus .hireus-title h5 {
+    font-size: 30px;
+  }
+  main .hireus .hireus-title span {
+    font-size: 30px;
+  }
+  main .hireus .hireus-content p {
+    font-size: 12px;
+  }
+  main .hireus .hireus-input {
+    margin-top: 50px;
+  }
+  main .hireus .hireus-input .group-input {
+    flex-direction: column;
+  }
+  main .hireus .hireus-input .group-input .mail {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  main .hireus .hireus-input .group-input input {
+    padding: 5px 15px;
+  }
+  main .hireus .hireus-input .message {
+    padding: 15px 0 100px 15px;
+  }
+  main .hireus .hireus-input .hireus-input-bottom {
+    flex-direction: column;
+  }
+  main .hireus .hireus-input .hireus-input-bottom .icon {
+    margin-top: 15px;
+  }
+  main .hireus .hireus-input .hireus-input-bottom .icon img {
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer {
+    padding: 50px 5%;
+  }
+  .footer .footer-content span {
+    font-size: 8px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

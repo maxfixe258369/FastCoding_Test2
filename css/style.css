@@ -3,6 +3,15 @@ body {
   line-height: 1.5;
 }
 
+@keyframes Scale {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
 .header {
   background-image: url("../image/background_macbook.jpg");
   padding: 51px 22% 240px;
@@ -414,6 +423,9 @@ main .ourteam .ourteam-image .image-group {
 main .ourteam .ourteam-image .image-group .image-group-element {
   cursor: pointer;
   text-align: center;
+}
+main .ourteam .ourteam-image .image-group .image-group-element:hover {
+  animation: Scale 1s;
 }
 main .ourteam .ourteam-image .image-group .image-group-element > img {
   width: 200px;

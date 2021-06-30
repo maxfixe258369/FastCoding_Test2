@@ -4,6 +4,32 @@ body {
     line-height: 1.5;
 }
 
+@media screen and (min-width: 1025px) {
+    main {
+        .description {
+            opacity: 0;
+        }
+
+        .fly {
+            animation: Fly 1s;
+            opacity: 1;
+        }
+
+        .ourworks {
+            .ourworks-image {
+                opacity: 0;
+            }
+
+            .animate {
+                animation: Animate 1s;
+                opacity: 1;
+            }
+    
+        }
+    }
+    
+}
+
 @keyframes Scale {
     from {
         opacity: 0.8;
@@ -14,6 +40,32 @@ body {
         transform: translateY(-20px);
     }
 }
+
+@keyframes Fly {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes Animate {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 
 .header {
     background-image: url('../image/background_macbook.jpg');
@@ -335,6 +387,7 @@ main {
         .ourworks-image {
             margin-top: 90px;
 
+
             .image-group {
                 display: flex;
                 justify-content: space-around;
@@ -512,15 +565,25 @@ main {
                     cursor: pointer;
                     text-align: center;
 
-                    &:hover {
+                    &:hover >img{
                         animation: Scale 1s;
+                        filter: grayscale(0%);
+                        -webkit-filter: grayscale(0%);
+                        -moz-filter: grayscale(0%);
+                        -ms-filter: grayscale(0%);
+                        -o-filter: grayscale(0%);
                     }
 
                     >img {
                         width: 200px;
                         height: 250px;
                         cursor: pointer;
-                        margin-bottom: 20px;
+                        margin-bottom: 20px;  
+                        filter: grayscale(100%);
+                        -webkit-filter: grayscale(100%);
+                        -moz-filter: grayscale(100%);
+                        -ms-filter: grayscale(100%);
+                        -o-filter: grayscale(100%);
                     }
 
                     .ourteam-name {
@@ -682,6 +745,8 @@ main {
         }
     }
 }
+
+
 
 //Responsive Tablet
 @media screen and (max-width: 1024px) {

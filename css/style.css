@@ -3,22 +3,6 @@ body {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 1025px) {
-  main .description {
-    opacity: 0;
-  }
-  main .fly {
-    animation: Fly 1s;
-    opacity: 1;
-  }
-  main .ourworks .ourworks-image {
-    opacity: 0;
-  }
-  main .ourworks .animate {
-    animation: Animate 1s;
-    opacity: 1;
-  }
-}
 @keyframes Scale {
   from {
     opacity: 0.8;
@@ -48,35 +32,36 @@ body {
     opacity: 1;
   }
 }
-.header {
+.section-top-page {
   background-image: url("../image/background_macbook.jpg");
   padding: 51px 22% 240px;
   background-size: cover;
   position: relative;
 }
-.header .header-head {
+.section-top-page .header .header-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header-head nav .menu {
+.section-top-page .header .header-head .menu {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
-.header .header-head nav .menu .nav-button {
+.section-top-page .header .header-head .menu:hover {
+  background-color: #80808047;
+}
+.section-top-page .header .header-head .menu .nav-button {
   font-size: 25px;
   cursor: pointer;
   margin-left: 20px;
 }
-.header .header-head nav .menu .nav-button:hover {
-  color: gainsboro;
-}
-.header .header-head nav .menu span {
+.section-top-page .header .header-head .menu span {
   color: white;
   font-size: 16px;
   font-family: "Open Sans";
 }
-.header .header-head nav .sidenav {
+.section-top-page .header .header-head .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -90,7 +75,7 @@ body {
   display: block;
   text-align: center;
 }
-.header .header-head nav .sidenav a {
+.section-top-page .header .header-head .sidenav a {
   margin-bottom: 20px;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -99,66 +84,68 @@ body {
   display: block;
   transition: 0.3s;
 }
-.header .header-head nav .sidenav a:hover {
+.section-top-page .header .header-head .sidenav a:hover {
   color: #f1f1f1;
 }
-.header .header-head nav .sidenav .closebtn {
+.section-top-page .header .header-head .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
-.header .header-content .title {
-  padding: 130px 18% 0;
+.section-top-page .toppage-content .title {
+  padding-top: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header .header-content .title h1 {
+.section-top-page .toppage-content .title .title-content {
   font-size: 70px;
   font-family: "Open Sans";
   color: white;
   font-weight: bold;
   margin: 0;
 }
-.header .header-content .title span {
+.section-top-page .toppage-content .title .title-content span {
   font-size: 70px;
   font-family: "Open Sans";
   color: #f7600e;
   font-weight: bold;
 }
-.header .header-content .header-content-details {
+.section-top-page .toppage-content .toppage-content-details {
   padding: 0 15%;
+  margin-top: 20px;
 }
-.header .header-content .header-content-details p {
+.section-top-page .toppage-content .toppage-content-details p {
   font-size: 25px;
   font-family: "Open Sans";
   color: white;
   text-align: center;
 }
-.header .header-content .header-content-button {
+.section-top-page .toppage-content .toppage-content-button {
   text-align: center;
   margin-top: 72px;
 }
-.header .header-content .header-content-button button {
+.section-top-page .toppage-content .toppage-content-button a {
   border-radius: 10px;
   font-size: 16px;
   font-family: "Open Sans";
   cursor: pointer;
+  text-decoration: none;
 }
-.header .header-content .header-content-button .hire-us {
+.section-top-page .toppage-content .toppage-content-button .hire-us {
   padding: 19px 77px;
   background-color: #f7600e;
   color: white;
   margin-right: 10px;
   border: none;
 }
-.header .header-content .header-content-button .hire-us {
+.section-top-page .toppage-content .toppage-content-button .hire-us {
   background: linear-gradient(135deg, #fff 50%, #f7600e 50%);
   position: relative;
 }
-.header .header-content .header-content-button .hire-us:after {
+.section-top-page .toppage-content .toppage-content-button .hire-us:after {
   content: "";
   position: absolute;
   top: 0;
@@ -168,53 +155,55 @@ body {
   background: linear-gradient(135deg, #f7600e 50%, #fff 50%);
   z-index: -1;
 }
-.header .header-content .header-content-button .hire-us, .header .header-content .header-content-button .hire-us:after {
+.section-top-page .toppage-content .toppage-content-button .hire-us,
+.section-top-page .toppage-content .toppage-content-button .hire-us:after {
   background-size: 300%;
   background-position: 100%;
   transition: 0.8s;
 }
-.header .header-content .header-content-button .hire-us:hover, .header .header-content .header-content-button .hire-us:hover:after {
+.section-top-page .toppage-content .toppage-content-button .hire-us:hover,
+.section-top-page .toppage-content .toppage-content-button .hire-us:hover:after {
   background-position: 0;
   color: #f7600e;
 }
-.header .header-content .header-content-button .our-works {
+.section-top-page .toppage-content .toppage-content-button .our-works {
   padding: 19px 60px;
   background-color: transparent;
   color: white;
   border: 1px solid gray;
 }
-.header .header-content .header-content-button .our-works:hover {
+.section-top-page .toppage-content .toppage-content-button .our-works:hover {
   background-color: white;
   color: black;
 }
-.header .header-content .button-more {
+.section-top-page .toppage-content .button-more {
   position: absolute;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
-.header .header-content .button-more i {
+.section-top-page .toppage-content .button-more i {
   color: white;
   border: 1px solid white;
   padding: 5px 7px;
   border-radius: 40px;
   cursor: pointer;
 }
-.header .header-content .button-more i:hover {
+.section-top-page .toppage-content .button-more i:hover {
   background: gray;
 }
 
-main .description {
+.section-description {
   padding: 100px 20% 100px;
   display: flex;
   justify-content: space-around;
   line-height: 2;
 }
-main .description .description-element {
+.section-description .description-element {
   text-align: center;
   margin: 0 30px;
 }
-main .description .description-element .image {
+.section-description .description-element .image {
   border: 1px solid gainsboro;
   border-radius: 50%;
   padding: 42px;
@@ -223,25 +212,26 @@ main .description .description-element .image {
   transform: translateX(-50%);
   box-sizing: unset;
 }
-main .description .description-element .image img {
+.section-description .description-element .image img {
   height: 58px;
   width: 50px;
 }
-main .description .description-element h2 {
+.section-description .description-element .title-content {
   font-size: 16px;
   font-family: "Open Sans";
   margin-top: 20px;
 }
-main .description .description-element p {
+.section-description .description-element p {
   font-size: 14px;
   font-family: "Open Sans";
   padding: 0 8px;
 }
-main .subscribe {
+
+.subscribe {
   padding: 85px 16%;
   background-image: url("../image/tablet.jpg");
 }
-main .subscribe input {
+.subscribe input {
   width: 41%;
   padding: 15px;
   margin-left: 20%;
@@ -250,7 +240,7 @@ main .subscribe input {
   border-radius: 10px;
   outline: none;
 }
-main .subscribe button {
+.subscribe button {
   padding: 15px 7%;
   background: #f7600e;
   color: white;
@@ -261,11 +251,11 @@ main .subscribe button {
   font-family: "Open Sans";
   font-weight: 600;
 }
-main .subscribe button {
+.subscribe button {
   background: linear-gradient(135deg, #fff 50%, #f7600e 50%);
   position: relative;
 }
-main .subscribe button:after {
+.subscribe button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -275,57 +265,60 @@ main .subscribe button:after {
   background: linear-gradient(135deg, #f7600e 50%, #fff 50%);
   z-index: -1;
 }
-main .subscribe button, main .subscribe button:after {
+.subscribe button,
+.subscribe button:after {
   background-size: 300%;
   background-position: 100%;
   transition: 0.8s;
 }
-main .subscribe button:hover, main .subscribe button:hover:after {
+.subscribe button:hover,
+.subscribe button:hover:after {
   background-position: 0;
   color: #f7600e;
 }
-main .ourworks {
+
+.section-our-works {
   padding: 95px 20%;
 }
-main .ourworks .ourworks-title {
+.section-our-works .ourworks-title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .ourworks .ourworks-title h3 {
+.section-our-works .ourworks-title .title-content {
   margin: 0;
   font-family: "Open Sans";
   font-size: 35px;
 }
-main .ourworks .ourworks-title span {
+.section-our-works .ourworks-title .title-content span {
   font-family: "Open Sans";
   font-size: 35px;
   font-weight: 600;
   color: #f7600e;
 }
-main .ourworks .ourworks-content {
+.section-our-works .ourworks-content {
   text-align: center;
   padding: 0 25%;
 }
-main .ourworks .ourworks-content p {
+.section-our-works .ourworks-content p {
   font-family: "Open Sans";
   font-size: 16px;
   margin-top: 20px;
 }
-main .ourworks .ourworks-image {
+.section-our-works .ourworks-image {
   margin-top: 90px;
 }
-main .ourworks .ourworks-image .image-group {
+.section-our-works .ourworks-image .image-group {
   display: flex;
   justify-content: space-around;
 }
-main .ourworks .ourworks-image .image-group .image-element {
+.section-our-works .ourworks-image .image-group .image-element {
   margin: 10px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
-main .ourworks .ourworks-image .image-group .image-element .show-project {
+.section-our-works .ourworks-image .image-group .image-element .show-project {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -338,19 +331,19 @@ main .ourworks .ourworks-image .image-group .image-element .show-project {
   transform: translateY(100%);
   transition: 0.3s;
 }
-main .ourworks .ourworks-image .image-group .image-element .show-project .project-name {
+.section-our-works .ourworks-image .image-group .image-element .show-project .project-name {
   font-family: "Open Sans";
   font-size: 25px;
   color: white;
   font-weight: bold;
 }
-main .ourworks .ourworks-image .image-group .image-element .show-project p {
+.section-our-works .ourworks-image .image-group .image-element .show-project p {
   font-family: "Open Sans";
   font-size: 14px;
   color: white;
   margin-top: 10px;
 }
-main .ourworks .ourworks-image .image-group .image-element .show-project button {
+.section-our-works .ourworks-image .image-group .image-element .show-project button {
   color: #f7600e;
   background-color: white;
   cursor: pointer;
@@ -358,17 +351,17 @@ main .ourworks .ourworks-image .image-group .image-element .show-project button 
   border-radius: 10px;
   border: none;
 }
-main .ourworks .ourworks-image .image-group .image-element .show-project button:hover {
+.section-our-works .ourworks-image .image-group .image-element .show-project button:hover {
   color: blue;
 }
-main .ourworks .ourworks-image .image-group .image-element:hover .show-project {
+.section-our-works .ourworks-image .image-group .image-element:hover .show-project {
   transform: translateY(0);
 }
-main .ourworks .ourworks-more {
+.section-our-works .ourworks-more {
   text-align: center;
   margin-top: 100px;
 }
-main .ourworks .ourworks-more .more {
+.section-our-works .ourworks-more .more {
   padding: 15px 60px;
   border-radius: 10px;
   border: 1px solid gainsboro;
@@ -378,23 +371,24 @@ main .ourworks .ourworks-more .more {
   font-size: 16px;
   font-weight: 600;
 }
-main .ourworks .ourworks-more .more:hover {
+.section-our-works .ourworks-more .more:hover {
   background-color: gainsboro;
   opacity: 0.8;
 }
-main .avatar {
+
+.avatar {
   background-image: url("../image/women.jpg");
   background-size: cover;
   text-align: center;
   padding: 100px 0;
 }
-main .avatar .carousel-inner {
+.avatar .carousel-inner {
   padding: 0 22%;
 }
-main .avatar .carousel-inner img {
+.avatar .carousel-inner img {
   border-radius: 80px;
 }
-main .avatar .carousel-inner p {
+.avatar .carousel-inner p {
   font-family: "Open Sans";
   font-size: 25px;
   color: white;
@@ -405,62 +399,64 @@ main .avatar .carousel-inner p {
   font-weight: 100;
   margin-bottom: 50px;
 }
-main .avatar .carousel-inner span {
+.avatar .carousel-inner span {
   font-family: "Open Sans";
   font-size: 18px;
   color: white;
   font-weight: 600;
 }
-main .avatar .carousel-control-prev {
+.avatar .carousel-control-prev {
   left: 100px;
 }
-main .avatar .carousel-control-next {
+.avatar .carousel-control-next {
   right: 100px;
 }
+
 @media screen and (max-width: 1600px) {
-  main .ourteam {
+  .section-our-team {
     padding: 95px 16% !important;
   }
 }
-main .ourteam {
+.section-our-team {
   padding: 95px 18%;
   line-height: 2;
 }
-main .ourteam .ourteam-title {
+.section-our-team .ourteam-title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .ourteam .ourteam-title h4 {
+.section-our-team .ourteam-title .title-content {
   margin: 0;
   font-family: "Open Sans";
   font-size: 35px;
 }
-main .ourteam .ourteam-title span {
+.section-our-team .ourteam-title .title-content span {
   font-family: "Open Sans";
   font-size: 35px;
   font-weight: 600;
   color: #f7600e;
 }
-main .ourteam .ourteam-content {
+.section-our-team .ourteam-content {
   text-align: center;
   padding: 0 25%;
 }
-main .ourteam .ourteam-content p {
+.section-our-team .ourteam-content p {
   font-family: "Open Sans";
   font-size: 16px;
   margin-top: 20px;
 }
-main .ourteam .ourteam-image .image-group {
+.section-our-team .ourteam-image .image-group {
   display: flex;
   justify-content: space-around;
   margin-top: 120px;
 }
-main .ourteam .ourteam-image .image-group .image-group-element {
+.section-our-team .ourteam-image .image-group .image-group-element {
   cursor: pointer;
   text-align: center;
+  list-style-type: none;
 }
-main .ourteam .ourteam-image .image-group .image-group-element:hover > img {
+.section-our-team .ourteam-image .image-group .image-group-element:hover > img {
   animation: Scale 1s;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
@@ -468,7 +464,7 @@ main .ourteam .ourteam-image .image-group .image-group-element:hover > img {
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
 }
-main .ourteam .ourteam-image .image-group .image-group-element > img {
+.section-our-team .ourteam-image .image-group .image-group-element > img {
   width: 200px;
   height: 250px;
   cursor: pointer;
@@ -479,97 +475,106 @@ main .ourteam .ourteam-image .image-group .image-group-element > img {
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
 }
-main .ourteam .ourteam-image .image-group .image-group-element .ourteam-name {
+.section-our-team .ourteam-image .image-group .image-group-element .ourteam-name {
   font-size: 25px;
   font-weight: 500;
   font-family: "Open Sans";
 }
-main .ourteam .ourteam-image .image-group .image-group-element .icon {
+.section-our-team .ourteam-image .image-group .image-group-element .icon {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  padding: 0;
 }
-main .ourteam .ourteam-image .image-group .image-group-element .icon > img {
+.section-our-team .ourteam-image .image-group .image-group-element .icon li {
+  list-style-type: none;
+}
+.section-our-team .ourteam-image .image-group .image-group-element .icon li a {
+  height: 100%;
+  display: inline-block;
+}
+.section-our-team .ourteam-image .image-group .image-group-element .icon li a > img {
   width: 25px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
-main .ourteam .ourteam-image .image-group .image-group-element p {
+.section-our-team .ourteam-image .image-group .image-group-element p {
   padding: 0 10%;
   font-size: 14px;
   font-family: "Open Sans";
   margin-top: 20px;
 }
-main .hireus {
+
+.section-hire-us {
   background-image: url("../image/background_hireus.jpg");
   background-size: cover;
   padding: 95px 20%;
   line-height: 2;
 }
-main .hireus .hireus-title {
+.section-hire-us .hireus-title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .hireus .hireus-title h5 {
+.section-hire-us .hireus-title .title-content {
   margin: 0;
   font-family: "Open Sans";
   font-size: 35px;
   color: white;
 }
-main .hireus .hireus-title span {
+.section-hire-us .hireus-title .title-content span {
   font-family: "Open Sans";
   font-size: 35px;
   font-weight: 600;
   color: #f7600e;
 }
-main .hireus .hireus-content {
+.section-hire-us .hireus-content {
   text-align: center;
   padding: 0 25%;
 }
-main .hireus .hireus-content p {
+.section-hire-us .hireus-content p {
   font-family: "Open Sans";
   font-size: 16px;
   margin-top: 20px;
   color: white;
 }
-main .hireus .hireus-input {
+.section-hire-us .hireus-input {
   margin-top: 100px;
   text-align: center;
   padding: 0 10%;
 }
-main .hireus .hireus-input .group-input {
+.section-hire-us .hireus-input .group-input {
   display: flex;
   justify-content: space-between;
 }
-main .hireus .hireus-input .group-input > input {
+.section-hire-us .hireus-input .group-input > input {
   border-radius: 10px;
   border: none;
   outline: none;
 }
-main .hireus .hireus-input .group-input .mail {
+.section-hire-us .hireus-input .group-input .mail {
   flex: 1;
   margin-right: 20px;
   padding: 8px 15px;
 }
-main .hireus .hireus-input .group-input .subject {
+.section-hire-us .hireus-input .group-input .subject {
   flex: 1;
   padding: 8px 15px;
 }
-main .hireus .hireus-input .message {
+.section-hire-us .hireus-input .message {
   margin-top: 30px;
   width: 100%;
-  padding: 15px 0 200px 15px;
   border-radius: 10px;
   border: none;
   outline: none;
+  padding: 8px 15px;
 }
-main .hireus .hireus-input .hireus-input-bottom {
+.section-hire-us .hireus-input .hireus-input-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
 }
-main .hireus .hireus-input .hireus-input-bottom button {
+.section-hire-us .hireus-input .hireus-input-bottom button {
   padding: 7px 70px;
   background-color: #f7600e;
   color: white;
@@ -580,15 +585,19 @@ main .hireus .hireus-input .hireus-input-bottom button {
   font-weight: 500;
   cursor: pointer;
 }
-main .hireus .hireus-input .hireus-input-bottom button:hover {
+.section-hire-us .hireus-input .hireus-input-bottom button:hover {
   opacity: 0.8;
 }
-main .hireus .hireus-input .hireus-input-bottom .icon img {
+.section-hire-us .hireus-input .hireus-input-bottom .icon a {
+  height: 100%;
+  display: inline-block;
+}
+.section-hire-us .hireus-input .hireus-input-bottom .icon a img {
   margin: 0 5px;
   border-radius: 50px;
   cursor: pointer;
 }
-main .hireus .hireus-input .hireus-input-bottom .icon img:hover {
+.section-hire-us .hireus-input .hireus-input-bottom .icon a:hover {
   opacity: 0.8;
 }
 
@@ -602,221 +611,277 @@ main .hireus .hireus-input .hireus-input-bottom .icon img:hover {
   align-items: center;
   color: white;
 }
+.footer .footer-content .copyright {
+  font-size: 16px;
+  font-family: "Open Sans";
+}
 .footer .footer-content span {
   font-size: 16px;
   font-family: "Open Sans";
 }
 
-@media screen and (max-width: 1024px) {
-  .header .header-content .title {
-    padding: 130px 16%;
+@media screen and (min-width: 1025px) {
+  .section-description {
+    opacity: 0;
   }
-  .header .header-content .title h1 {
+
+  .fly {
+    animation: Fly 1s;
+    opacity: 1;
+  }
+
+  .section-our-works .ourworks-image {
+    opacity: 0;
+  }
+  .section-our-works .animate {
+    animation: Animate 1s;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-top-page {
+    padding: 51px 10% 240px;
+  }
+  .section-top-page .toppage-content .title .title-content {
     font-size: 50px;
   }
-  .header .header-content .title span {
+  .section-top-page .toppage-content .title .title-content span {
     font-size: 50px;
   }
-  .header .header-content .header-content-details {
-    padding: 0;
+  .section-top-page .toppage-content .toppage-content-details {
+    padding: 0 5%;
   }
-  .header .header-content .header-content-details p {
+  .section-top-page .toppage-content .toppage-content-details p {
     font-size: 16px;
   }
-  .header .header-content .header-content-button .hire-us {
+  .section-top-page .toppage-content .toppage-content-button .hire-us {
     padding: 19px 60px;
   }
-  .header .header-content .header-content-button .our-works {
+  .section-top-page .toppage-content .toppage-content-button .our-works {
     padding: 19px 48px;
   }
 
-  main .description .description-element {
+  .section-description .description-element {
     margin: 0 15px;
   }
-  main .ourworks {
+
+  .section-our-works {
     padding: 95px 16%;
   }
-  main .ourworks .ourworks-content {
+  .section-our-works .ourworks-content {
     padding: 0 10%;
   }
-  main .ourworks .ourworks-image .image-group .image-element img {
+  .section-our-works .ourworks-image .image-group .image-element img {
     width: 150px;
     height: 200px;
   }
-  main .ourworks .ourworks-image .image-group .image-element .show-project {
+  .section-our-works .ourworks-image .image-group .image-element .show-project {
     padding: 0 10%;
   }
-  main .ourworks .ourworks-image .image-group .image-element .show-project .project-name {
+  .section-our-works .ourworks-image .image-group .image-element .show-project .project-name {
     font-size: 16px;
   }
-  main .ourworks .ourworks-image .image-group .image-element .show-project p {
+  .section-our-works .ourworks-image .image-group .image-element .show-project p {
     margin: 0;
     font-size: 12px;
   }
-  main .ourworks .ourworks-image .image-group .image-element .show-project button {
+  .section-our-works .ourworks-image .image-group .image-element .show-project button {
     padding: 0 20px;
     font-size: 12px;
   }
-  main .avatar .carousel-inner {
+
+  .avatar .carousel-inner {
     padding: 0 12%;
   }
-  main .avatar .carousel-inner p {
+  .avatar .carousel-inner p {
     font-size: 16px;
   }
-  main .avatar .carousel-control-prev {
+  .avatar .carousel-control-prev {
     left: 0;
   }
-  main .avatar .carousel-control-next {
+  .avatar .carousel-control-next {
     right: 0;
   }
-  main .ourteam .ourteam-content {
+
+  .section-our-team .ourteam-content {
     padding: 0 10%;
   }
-  main .ourteam .ourteam-image .image-group .image-group-element {
-    margin: 0 10px;
+  .section-our-team .ourteam-image .image-group {
+    flex-wrap: wrap;
   }
-  main .ourteam .ourteam-image .image-group .image-group-element > img {
-    width: 150px;
-    height: 150px;
+  .section-our-team .ourteam-image .image-group .image-group-element {
+    padding: 20px;
+    margin: 10px 0;
+    border-bottom: 1px solid gainsboro;
   }
-  main .ourteam .ourteam-image .image-group .image-group-element .ourteam-name {
+  .section-our-team .ourteam-image .image-group .image-group-element .ourteam-name {
     font-size: 18px;
   }
-  main .ourteam .ourteam-image .image-group .image-group-element p {
+  .section-our-team .ourteam-image .image-group .image-group-element p {
     padding: 0;
-  }
-  main .hireus {
-    padding: 95px 10%;
-  }
-  main .hireus .hireus-content {
-    padding: 0 10%;
   }
 
-  .footer .footer-content span {
-    font-size: 12px;
+  .section-hire-us {
+    padding: 95px 10%;
+  }
+  .section-hire-us .hireus-content {
+    padding: 0 10%;
   }
 }
+.footer .footer-content span {
+  font-size: 12px;
+}
+.footer .footer-content .copyright {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 767px) {
-  .header {
+  .section-top-page {
     padding: 51px 5% 240px;
   }
-  .header .header-content .title {
-    padding: 50px 10%;
+  .section-top-page .toppage-content .title {
+    padding-top: 50px 0;
   }
-  .header .header-content .title h1 {
+  .section-top-page .toppage-content .title .title-content {
     font-size: 30px;
   }
-  .header .header-content .title span {
+  .section-top-page .toppage-content .title .title-content span {
     font-size: 30px;
   }
-  .header .header-content .header-content-details {
+  .section-top-page .toppage-content .toppage-content-details {
     padding: 0;
   }
-  .header .header-content .header-content-details p {
+  .section-top-page .toppage-content .toppage-content-details p {
     font-size: 14px;
   }
-  .header .header-content .header-content-button {
+  .section-top-page .toppage-content .toppage-content-button {
     display: flex;
     flex-direction: column;
     padding: 0 50px;
     align-items: center;
   }
-  .header .header-content .header-content-button .hire-us {
+  .section-top-page .toppage-content .toppage-content-button .hire-us {
     padding: 19px 50px;
     margin-bottom: 10px;
+    border: 1px solid gainsboro;
+    margin-left: 10px;
   }
-  .header .header-content .header-content-button .our-works {
+  .section-top-page .toppage-content .toppage-content-button .our-works {
     padding: 19px 30px;
   }
 
-  main .description {
+  .section-description {
     flex-direction: column;
   }
-  main .description .description-element p {
+  .section-description .description-element p {
     font-size: 12px;
   }
-  main .subscribe {
+
+  .subscribe {
     padding: 85px 10%;
     display: flex;
     flex-direction: column;
     background-size: cover;
   }
-  main .subscribe input {
+  .subscribe input {
     width: 100%;
     margin: 0;
     margin-bottom: 20px;
   }
-  main .ourworks {
+
+  .section-our-works {
     padding: 95px 16%;
   }
-  main .ourworks .ourworks-content {
+  .section-our-works .ourworks-content {
     padding: 0;
   }
-  main .ourworks .ourworks-content p {
+  .section-our-works .ourworks-content p {
     font-size: 12px;
   }
-  main .avatar .carousel-inner p {
+  .section-our-works .ourworks-image .image-group {
+    flex-wrap: wrap;
+  }
+  .section-our-works .ourworks-image .image-group .image-element img {
+    width: 200px;
+    height: 250px;
+  }
+
+  .avatar .carousel-inner {
+    padding: 0 12%;
+  }
+  .avatar .carousel-inner p {
     font-size: 12px;
     padding: 0 20px;
   }
-  main .ourteam {
+  .avatar .carousel-control-prev {
+    left: 0;
+  }
+  .avatar .carousel-control-next {
+    right: 0;
+  }
+
+  .section-our-team {
     padding: 95px 10% !important;
   }
-  main .ourteam .ourteam-title h4 {
+  .section-our-team .ourteam-title .title-content {
     font-size: 30px;
   }
-  main .ourteam .ourteam-title span {
+  .section-our-team .ourteam-title .title-content span {
     font-size: 30px;
   }
-  main .ourteam .ourteam-content p {
+  .section-our-team .ourteam-content {
+    padding: 0 10%;
+  }
+  .section-our-team .ourteam-content p {
     font-size: 12px;
   }
-  main .ourteam .ourteam-image .image-group {
+  .section-our-team .ourteam-image .image-group {
     flex-wrap: wrap;
   }
-  main .ourteam .ourteam-image .image-group .image-group-element {
+  .section-our-team .ourteam-image .image-group .image-group-element {
     padding: 20px;
     margin: 10px 0;
     border-bottom: 1px solid gainsboro;
   }
-  main .ourteam .ourteam-image .image-group .image-group-element p {
+  .section-our-team .ourteam-image .image-group .image-group-element p {
     font-size: 12px;
   }
-  main .hireus {
+
+  .section-hire-us {
     padding: 95px 10%;
   }
-  main .hireus .hireus-title h5 {
+  .section-hire-us .hireus-title .title-content {
     font-size: 30px;
   }
-  main .hireus .hireus-title span {
+  .section-hire-us .hireus-title .title-content span {
     font-size: 30px;
   }
-  main .hireus .hireus-content p {
+  .section-hire-us .hireus-content {
+    padding: 0 10%;
+  }
+  .section-hire-us .hireus-content p {
     font-size: 12px;
   }
-  main .hireus .hireus-input {
+  .section-hire-us .hireus-input {
     margin-top: 50px;
   }
-  main .hireus .hireus-input .group-input {
+  .section-hire-us .hireus-input .group-input {
     flex-direction: column;
   }
-  main .hireus .hireus-input .group-input .mail {
+  .section-hire-us .hireus-input .group-input .mail {
     margin-right: 0;
     margin-bottom: 15px;
   }
-  main .hireus .hireus-input .group-input input {
+  .section-hire-us .hireus-input .group-input input {
     padding: 5px 15px;
   }
-  main .hireus .hireus-input .message {
-    padding: 15px 0 100px 15px;
-  }
-  main .hireus .hireus-input .hireus-input-bottom {
+  .section-hire-us .hireus-input .hireus-input-bottom {
     flex-direction: column;
   }
-  main .hireus .hireus-input .hireus-input-bottom .icon {
+  .section-hire-us .hireus-input .hireus-input-bottom .icon {
     margin-top: 15px;
   }
-  main .hireus .hireus-input .hireus-input-bottom .icon img {
+  .section-hire-us .hireus-input .hireus-input-bottom .icon a img {
     margin: 0 2px;
     width: 30px;
     height: 30px;
@@ -826,7 +891,10 @@ main .hireus .hireus-input .hireus-input-bottom .icon img:hover {
     padding: 50px 5%;
   }
   .footer .footer-content span {
-    font-size: 8px;
+    font-size: 10px;
+  }
+  .footer .footer-content .copyright {
+    font-size: 10px;
   }
 }
 

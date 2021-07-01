@@ -1,1088 +1,1118 @@
 //All device
 body {
-    margin: 0;
-    line-height: 1.5;
-}
-
-@media screen and (min-width: 1025px) {
-    main {
-        .description {
-            opacity: 0;
-        }
-
-        .fly {
-            animation: Fly 1s;
-            opacity: 1;
-        }
-
-        .ourworks {
-            .ourworks-image {
-                opacity: 0;
-            }
-
-            .animate {
-                animation: Animate 1s;
-                opacity: 1;
-            }
-    
-        }
-    }
-    
+  margin: 0;
+  line-height: 1.5;
 }
 
 @keyframes Scale {
-    from {
-        opacity: 0.8;
-    }
+  from {
+    opacity: 0.8;
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes Fly {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes Animate {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
+.section-top-page {
+  background-image: url("../image/background_macbook.jpg");
+  padding: 51px 22% 240px;
+  background-size: cover;
+  position: relative;
 
-
-.header {
-    background-image: url('../image/background_macbook.jpg');
-    padding: 51px 22% 240px;
-    background-size: cover;
-    position: relative;
-
+  .header {
     .header-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .menu {
+        cursor: pointer;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-    
 
-        nav {
-            .menu {
-                display: flex;
-                align-items: center;
-
-                .nav-button {
-                    font-size: 25px;
-                    cursor: pointer;
-                    margin-left: 20px;
-                }
-
-                .nav-button:hover {
-                    color: gainsboro;
-                }
-        
-                span {
-                    color: white;
-                    font-size: 16px;
-                    font-family: 'Open Sans';
-                }
-            }
-            
-
-            .sidenav {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                right: 0;
-                background-color: #111111e6;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-                display: block;
-                text-align: center;
-
-                a {
-                    margin-bottom: 20px;
-                    padding: 8px 8px 8px 32px;
-                    text-decoration: none;
-                    font-size: 25px;
-                    color: #818181;
-                    display: block;
-                    transition: 0.3s;
-                }
-
-                a:hover {
-                    color: #f1f1f1;
-                }
-
-                .closebtn {
-                    position: absolute;
-                    top: 0;
-                    right: 25px;
-                    font-size: 36px;
-                    margin-left: 50px;
-                }
-            }
+        &:hover {
+          background-color: #80808047;
         }
 
+        .nav-button {
+          font-size: 25px;
+          cursor: pointer;
+          margin-left: 20px;
+        }
+
+        span {
+          color: white;
+          font-size: 16px;
+          font-family: "Open Sans";
+        }
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111111e6;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: block;
+        text-align: center;
+
+        a {
+          margin-bottom: 20px;
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        a:hover {
+          color: #f1f1f1;
+        }
+
+        .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+
+  .toppage-content {
+    .title {
+      padding-top: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .title-content {
+        font-size: 70px;
+        font-family: "Open Sans";
+        color: white;
+        font-weight: bold;
+        margin: 0;
+
+        span {
+          font-size: 70px;
+          font-family: "Open Sans";
+          color: #f7600e;
+          font-weight: bold;
+        }
+      }
     }
 
-    .header-content {
-        .title {
-            padding: 130px 18% 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    .toppage-content-details {
+      padding: 0 15%;
+      margin-top: 20px;
 
-            h1 {
-                font-size: 70px;
-                font-family: 'Open Sans';
-                color: white;
-                font-weight: bold;
-                margin: 0;
-            }
-
-            span {
-                font-size: 70px;
-                font-family: 'Open Sans';
-                color: #f7600e;
-                font-weight: bold;
-            }
-        }
-
-        .header-content-details {
-            padding: 0 15%;
-            p {
-                font-size: 25px;
-                font-family: 'Open Sans';
-                color: white;
-                text-align: center;
-            }
-        }
-
-        .header-content-button {
-            text-align: center;
-            margin-top: 72px;
-
-            button {
-                border-radius: 10px;
-                font-size: 16px;
-                font-family: 'Open Sans';
-                cursor: pointer;
-            }
-
-            .hire-us {
-                padding: 19px 77px;
-                background-color: #f7600e;
-                color: white;
-                margin-right: 10px;
-                border: none;
-            }
-
-            .hire-us {
-                background: linear-gradient(135deg, #fff 50%, #f7600e 50%);
-                position: relative;
-            }
-            
-            .hire-us:after {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background: linear-gradient(135deg, #f7600e 50%, #fff 50%);
-                z-index: -1;
-            }
-            
-            .hire-us, .hire-us:after {
-                background-size: 300%;
-                background-position: 100%;
-                transition: .8s;
-            }
-            
-            .hire-us:hover,.hire-us:hover:after {
-                background-position: 0;
-                color: #f7600e;
-            }
-
-            .our-works {
-                padding: 19px 60px;
-                background-color: transparent;
-                color: white;
-                border: 1px solid gray;
-            }
-
-            .our-works:hover {
-                background-color: white;
-                color: black;
-            }
-        }
-
-        .button-more {
-            position: absolute;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-
-            i {
-                color: white;
-                border: 1px solid white;
-                padding: 5px 7px;
-                border-radius: 40px;
-                cursor: pointer;
-            }
-
-            i:hover {
-                background: gray;
-            }
-        }
+      p {
+        font-size: 25px;
+        font-family: "Open Sans";
+        color: white;
+        text-align: center;
+      }
     }
+
+    .toppage-content-button {
+      text-align: center;
+      margin-top: 72px;
+
+      a {
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: "Open Sans";
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .hire-us {
+        padding: 19px 77px;
+        background-color: #f7600e;
+        color: white;
+        margin-right: 10px;
+        border: none;
+      }
+
+      .hire-us {
+        background: linear-gradient(135deg, #fff 50%, #f7600e 50%);
+        position: relative;
+      }
+
+      .hire-us:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #f7600e 50%, #fff 50%);
+        z-index: -1;
+      }
+
+      .hire-us,
+      .hire-us:after {
+        background-size: 300%;
+        background-position: 100%;
+        transition: 0.8s;
+      }
+
+      .hire-us:hover,
+      .hire-us:hover:after {
+        background-position: 0;
+        color: #f7600e;
+      }
+
+      .our-works {
+        padding: 19px 60px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid gray;
+      }
+
+      .our-works:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    .button-more {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      i {
+        color: white;
+        border: 1px solid white;
+        padding: 5px 7px;
+        border-radius: 40px;
+        cursor: pointer;
+      }
+
+      i:hover {
+        background: gray;
+      }
+    }
+  }
 }
 
-main {
-    .description {
-        padding: 100px 20% 100px;
-        display: flex;
-        justify-content: space-around;
-        line-height: 2;
+.section-description {
+  padding: 100px 20% 100px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 2;
 
-        .description-element {
-            text-align: center;
-            margin: 0 30px;
+  .description-element {
+    text-align: center;
+    margin: 0 30px;
 
-            .image {
-                border: 1px solid gainsboro;
-                border-radius: 50%;
-                padding: 42px;
-                width: 30%;
-                margin-left: 50%;
-                transform: translateX(-50%);
-                box-sizing: unset;
+    .image {
+      border: 1px solid gainsboro;
+      border-radius: 50%;
+      padding: 42px;
+      width: 30%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      box-sizing: unset;
 
-                img {
-                    height: 58px;
-                    width: 50px;
-                }
-            }
-
-            h2 {
-                font-size: 16px;
-                font-family: 'Open Sans';
-                margin-top: 20px;
-            }
-
-            p {
-                font-size: 14px;
-                font-family: 'Open Sans';
-                padding: 0 8px;
-            }
-        }
-
-
+      img {
+        height: 58px;
+        width: 50px;
+      }
     }
 
-    .subscribe {
-        padding: 85px 16%;
-        background-image: url('../image/tablet.jpg');
+    .title-content {
+      font-size: 16px;
+      font-family: "Open Sans";
+      margin-top: 20px;
+    }
 
-        input {
-            width: 41%;
-            padding: 15px;
-            margin-left: 20%;
-            margin-right: 30px;
-            border: none;
-            border-radius: 10px;
-            outline: none;
-        }
+    p {
+      font-size: 14px;
+      font-family: "Open Sans";
+      padding: 0 8px;
+    }
+  }
+}
 
-        button {
-            padding: 15px 7%;
-            background: #f7600e;
+.subscribe {
+  padding: 85px 16%;
+  background-image: url("../image/tablet.jpg");
+
+  input {
+    width: 41%;
+    padding: 15px;
+    margin-left: 20%;
+    margin-right: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  button {
+    padding: 15px 7%;
+    background: #f7600e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 600;
+  }
+
+  button {
+    background: linear-gradient(135deg, #fff 50%, #f7600e 50%);
+    position: relative;
+  }
+
+  button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #f7600e 50%, #fff 50%);
+    z-index: -1;
+  }
+
+  button,
+  button:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 0.8s;
+  }
+
+  button:hover,
+  button:hover:after {
+    background-position: 0;
+    color: #f7600e;
+  }
+}
+
+.section-our-works {
+  padding: 95px 20%;
+
+  .ourworks-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title-content {
+      margin: 0;
+      font-family: "Open Sans";
+      font-size: 35px;
+
+      span {
+        font-family: "Open Sans";
+        font-size: 35px;
+        font-weight: 600;
+        color: #f7600e;
+      }
+    }
+  }
+
+  .ourworks-content {
+    text-align: center;
+    padding: 0 25%;
+
+    p {
+      font-family: "Open Sans";
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+
+  .ourworks-image {
+    margin-top: 90px;
+
+    .image-group {
+      display: flex;
+      justify-content: space-around;
+
+      .image-element {
+        margin: 10px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        .show-project {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background-color: #f7600e;
+          opacity: 0.8;
+          text-align: center;
+          padding: 25% 10%;
+          transform: translateY(100%);
+          transition: 0.3s;
+
+          .project-name {
+            font-family: "Open Sans";
+            font-size: 25px;
             color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-            font-family: 'Open Sans';
-            font-weight: 600;
-        }
+            font-weight: bold;
+          }
 
-        button {
-            background: linear-gradient(135deg, #fff 50%, #f7600e 50%);
-            position: relative;
-        }
-        
-        button:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(135deg, #f7600e 50%, #fff 50%);
-            z-index: -1;
-        }
-        
-        button, button:after {
-            background-size: 300%;
-            background-position: 100%;
-            transition: .8s;
-        }
-        
-        button:hover,button:hover:after {
-            background-position: 0;
+          p {
+            font-family: "Open Sans";
+            font-size: 14px;
+            color: white;
+            margin-top: 10px;
+          }
+
+          button {
             color: #f7600e;
+            background-color: white;
+            cursor: pointer;
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: none;
+          }
+
+          button:hover {
+            color: blue;
+          }
         }
+      }
+
+      .image-element:hover .show-project {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .ourworks-more {
+    text-align: center;
+    margin-top: 100px;
+
+    .more {
+      padding: 15px 60px;
+      border-radius: 10px;
+      border: 1px solid gainsboro;
+      background: transparent;
+      cursor: pointer;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 600;
     }
 
-    .ourworks {
-        padding: 95px 20%;
+    .more:hover {
+      background-color: gainsboro;
+      opacity: 0.8;
+    }
+  }
+}
 
-        .ourworks-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+.avatar {
+  background-image: url("../image/women.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
 
-            h3 {
-                margin: 0;
-                font-family: 'Open Sans';
-                font-size: 35px;
-            }
+  .carousel-inner {
+    padding: 0 22%;
 
-            span {
-                font-family: 'Open Sans';
-                font-size: 35px;
-                font-weight: 600;
-                color: #f7600e;
-            }
-        }
-
-        .ourworks-content {
-            text-align: center;
-            padding: 0 25%;
-
-            p {
-                font-family: 'Open Sans';
-                font-size: 16px;
-                margin-top: 20px;
-            }
-        }
-
-        .ourworks-image {
-            margin-top: 90px;
-
-
-            .image-group {
-                display: flex;
-                justify-content: space-around;
-
-                .image-element {
-                    margin: 10px;
-                    position: relative;
-                    cursor: pointer;
-                    overflow: hidden;
-
-                    .show-project {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        left: 0;
-                        background-color: #f7600e;
-                        opacity: 0.8;
-                        text-align: center;
-                        padding: 25% 10%;
-                        transform: translateY(100%);
-                        transition: 0.3s;
-
-                        .project-name {
-                            font-family: 'Open Sans';
-                            font-size: 25px;
-                            color: white;
-                            font-weight: bold;
-                        }
-
-                        p {
-                            font-family: 'Open Sans';
-                            font-size: 14px;
-                            color: white;
-                            margin-top: 10px;
-                        }
-
-                        button {
-                            color: #f7600e;
-                            background-color: white;
-                            cursor: pointer;
-                            padding: 10px 30px;
-                            border-radius: 10px;
-                            border: none;
-                        }
-
-                        button:hover {
-                            color: blue;
-                        }
-                    }
-                }  
-                
-                .image-element:hover  .show-project {
-                    transform: translateY(0);
-                }
-            }
-        }
-
-        .ourworks-more {
-            text-align: center;
-            margin-top: 100px;
-
-            .more {
-                padding: 15px 60px;
-                border-radius: 10px;
-                border: 1px solid gainsboro;
-                background: transparent;
-                cursor: pointer;
-                font-family: 'Open Sans';
-                font-size: 16px;
-                font-weight: 600;
-            }
-
-            .more:hover {
-                background-color: gainsboro;
-                opacity: 0.8;
-            }
-        }
+    img {
+      border-radius: 80px;
     }
 
-    .avatar {
-        background-image: url('../image/women.jpg');
-        background-size: cover;
+    p {
+      font-family: "Open Sans";
+      font-size: 25px;
+      color: white;
+      font-style: italic;
+      margin-top: 50px;
+      padding: 0 120px;
+      line-height: 2;
+      font-weight: 100;
+      margin-bottom: 50px;
+    }
+
+    span {
+      font-family: "Open Sans";
+      font-size: 18px;
+      color: white;
+      font-weight: 600;
+    }
+  }
+
+  .carousel-control-prev {
+    left: 100px;
+  }
+
+  .carousel-control-next {
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .section-our-team {
+    padding: 95px 16% !important;
+  }
+}
+
+.section-our-team {
+  padding: 95px 18%;
+  line-height: 2;
+
+  .ourteam-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title-content {
+      margin: 0;
+      font-family: "Open Sans";
+      font-size: 35px;
+
+      span {
+        font-family: "Open Sans";
+        font-size: 35px;
+        font-weight: 600;
+        color: #f7600e;
+      }
+    }
+  }
+
+  .ourteam-content {
+    text-align: center;
+    padding: 0 25%;
+
+    p {
+      font-family: "Open Sans";
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+
+  .ourteam-image {
+    .image-group {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 120px;
+
+      .image-group-element {
+        cursor: pointer;
         text-align: center;
-        padding: 100px 0;
+        list-style-type: none;
 
-        .carousel-inner {
-            padding: 0 22%;
-
-            img {
-                border-radius: 80px;
-            }
-
-            p {
-                font-family: 'Open Sans';
-                font-size: 25px;
-                color: white;
-                font-style: italic;
-                margin-top: 50px;
-                padding: 0 120px;
-                line-height: 2;
-                font-weight: 100;
-                margin-bottom: 50px;
-            }
-
-            span {
-                font-family: 'Open Sans';
-                font-size: 18px;
-                color: white;
-                font-weight: 600;
-            }
-
-            
+        &:hover > img {
+          animation: Scale 1s;
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%);
+          -moz-filter: grayscale(0%);
+          -ms-filter: grayscale(0%);
+          -o-filter: grayscale(0%);
         }
 
-        .carousel-control-prev {
-            left: 100px;
+        > img {
+          width: 200px;
+          height: 250px;
+          cursor: pointer;
+          margin-bottom: 20px;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
         }
 
-        .carousel-control-next {
-            right: 100px;
+        .ourteam-name {
+          font-size: 25px;
+          font-weight: 500;
+          font-family: "Open Sans";
         }
-        
 
-        
+        .icon {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          padding: 0;
+
+          li {
+            list-style-type: none;
+
+            a {
+              height: 100%;
+              display: inline-block;
+              
+              > img {
+                width: 25px;
+                margin: 0 5px;
+              }
+            }
+          }
+        }
+
+        p {
+          padding: 0 10%;
+          font-size: 14px;
+          font-family: "Open Sans";
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+.section-hire-us {
+  background-image: url("../image/background_hireus.jpg");
+  background-size: cover;
+  padding: 95px 20%;
+  line-height: 2;
+
+  .hireus-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title-content {
+      margin: 0;
+      font-family: "Open Sans";
+      font-size: 35px;
+      color: white;
+
+      span {
+        font-family: "Open Sans";
+        font-size: 35px;
+        font-weight: 600;
+        color: #f7600e;
+      }
+    }
+  }
+
+  .hireus-content {
+    text-align: center;
+    padding: 0 25%;
+
+    p {
+      font-family: "Open Sans";
+      font-size: 16px;
+      margin-top: 20px;
+      color: white;
+    }
+  }
+
+  .hireus-input {
+    margin-top: 100px;
+    text-align: center;
+    padding: 0 10%;
+
+    .group-input {
+      display: flex;
+      justify-content: space-between;
+
+      > input {
+        border-radius: 10px;
+        border: none;
+        outline: none;
+      }
+
+      .mail {
+        flex: 1;
+        margin-right: 20px;
+        padding: 8px 15px;
+      }
+
+      .subject {
+        flex: 1;
+        padding: 8px 15px;
+      }
     }
 
-    @media screen and (max-width: 1600px) {
-        .ourteam {
-            padding: 95px 16% !important;
-        }
+    .message {
+      margin-top: 30px;
+      width: 100%;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      padding: 8px 15px;
     }
 
-    .ourteam {
-        padding: 95px 18%;
-        line-height: 2;
+    .hireus-input-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
 
-        .ourteam-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+      button {
+        padding: 7px 70px;
+        background-color: #f7600e;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+        font-family: "Open Sans";
+        font-weight: 500;
+        cursor: pointer;
+      }
 
-            h4 {
-                margin: 0;
-                font-family: 'Open Sans';
-                font-size: 35px;
-            }
+      button:hover {
+        opacity: 0.8;
+      }
 
-            span {
-                font-family: 'Open Sans';
-                font-size: 35px;
-                font-weight: 600;
-                color: #f7600e;
-            }
+      .icon {
+        a {
+          height: 100%;
+          display: inline-block;
+
+          img {
+            margin: 0 5px;
+            border-radius: 50px;
+            cursor: pointer;
+          }
         }
 
-        .ourteam-content {
-            text-align: center;
-            padding: 0 25%;
-
-            p {
-                font-family: 'Open Sans';
-                font-size: 16px;
-                margin-top: 20px;
-            }
+        a:hover {
+          opacity: 0.8;
         }
-
-        .ourteam-image {
-            .image-group {
-                display: flex;
-                justify-content: space-around;
-                margin-top: 120px;
-
-                .image-group-element {
-                    cursor: pointer;
-                    text-align: center;
-
-                    &:hover >img{
-                        animation: Scale 1s;
-                        filter: grayscale(0%);
-                        -webkit-filter: grayscale(0%);
-                        -moz-filter: grayscale(0%);
-                        -ms-filter: grayscale(0%);
-                        -o-filter: grayscale(0%);
-                    }
-
-                    >img {
-                        width: 200px;
-                        height: 250px;
-                        cursor: pointer;
-                        margin-bottom: 20px;  
-                        filter: grayscale(100%);
-                        -webkit-filter: grayscale(100%);
-                        -moz-filter: grayscale(100%);
-                        -ms-filter: grayscale(100%);
-                        -o-filter: grayscale(100%);
-                    }
-
-                    .ourteam-name {
-                        font-size: 25px;
-                        font-weight: 500;
-                        font-family: 'Open Sans';
-                    }
-
-                    .icon {
-                        display: flex;
-                        justify-content: center;
-                        margin-top: 20px;
-
-                        >img {
-                            width: 25px;
-                            margin: 0 10px;
-                        }
-                    }
-
-                    p {
-                        padding: 0 10%;
-                        font-size: 14px;
-                        font-family: 'Open Sans';
-                        margin-top: 20px;
-                    }
-                    
-                }
-               
-            }
-            
-        }
+      }
     }
-
-    .hireus {
-        background-image: url('../image/background_hireus.jpg');
-        background-size: cover;
-        padding: 95px 20%;
-        line-height: 2;
-
-        .hireus-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h5 {
-                margin: 0;
-                font-family: 'Open Sans';
-                font-size: 35px;
-                color: white;
-            }
-
-            span {
-                font-family: 'Open Sans';
-                font-size: 35px;
-                font-weight: 600;
-                color: #f7600e;
-            }
-        }
-
-        .hireus-content {
-            text-align: center;
-            padding: 0 25%;
-
-            p {
-                font-family: 'Open Sans';
-                font-size: 16px;
-                margin-top: 20px;
-                color: white;
-            }
-        }
-
-        .hireus-input {
-            margin-top: 100px;
-            text-align: center;
-            padding: 0 10%;
-
-            .group-input {
-                display: flex;
-                justify-content: space-between;
-
-                >input {
-                    border-radius: 10px;
-                    border: none;
-                    outline: none;
-                }
-
-                .mail {
-                    flex: 1;
-                    margin-right: 20px;
-                    padding: 8px 15px;
-                }
-
-                .subject {
-                    flex: 1;
-                    padding: 8px 15px;
-                }
-            }
-
-            .message {
-                margin-top: 30px;
-                width: 100%;
-                padding: 15px 0 200px 15px;
-                border-radius: 10px;
-                border: none;
-                outline: none;
-            }
-
-            .hireus-input-bottom {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-top: 30px;
-
-                button {
-                    padding: 7px 70px;
-                    background-color: #f7600e;
-                    color: white;
-                    border-radius: 10px;
-                    border: none;
-                    font-size: 16px;
-                    font-family: 'Open Sans';
-                    font-weight: 500;
-                    cursor: pointer;
-                }
-
-                button:hover {
-                    opacity: 0.8;
-                }
-
-                .icon {
-                    img {
-                        margin: 0 5px;
-                        border-radius: 50px;
-                        cursor: pointer;
-                    }
-
-                    img:hover {
-                        opacity: 0.8;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
 
 .footer {
-    background-color: #3b434c;
-    padding: 50px 20%;
+  background-color: #3b434c;
+  padding: 50px 20%;
 
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 
-        span {
-            font-size: 16px;
-            font-family: 'Open Sans';
-        }
+    .copyright {
+      font-size: 16px;
+      font-family: "Open Sans";
     }
+
+    span {
+      font-size: 16px;
+      font-family: "Open Sans";
+    }
+  }
 }
 
+//Responsive Only PC
+@media screen and (min-width: 1025px) {
+  .section-description {
+    opacity: 0;
+  }
 
+  .fly {
+    animation: Fly 1s;
+    opacity: 1;
+  }
+
+  .section-our-works {
+    .ourworks-image {
+      opacity: 0;
+    }
+
+    .animate {
+      animation: Animate 1s;
+      opacity: 1;
+    }
+  }
+}
 
 //Responsive Tablet
-@media screen and (max-width: 1024px) {
-    .header {
-        .header-content {
-            .title {
-                padding: 130px 16%;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-top-page {
+    padding: 51px 10% 240px;
 
-                h1 {
-                    font-size: 50px;
-                }
+    .toppage-content {
+      .title {
+        .title-content {
+          font-size: 50px;
 
-                span {
-                    font-size: 50px;
-                }
-            }
-
-            .header-content-details {
-                padding: 0;
-
-                p {
-                    font-size: 16px;
-                }
-            }
-
-            .header-content-button { 
-                .hire-us {
-                    padding: 19px 60px;
-                }
-
-                .our-works {
-                    padding: 19px 48px;
-                }
-            }
+          span {
+            font-size: 50px;
+          }
         }
+      }
+
+      .toppage-content-details {
+        padding: 0 5%;
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .toppage-content-button {
+        .hire-us {
+          padding: 19px 60px;
+        }
+
+        .our-works {
+          padding: 19px 48px;
+        }
+      }
+    }
+  }
+
+  .section-description {
+    .description-element {
+      margin: 0 15px;
+    }
+  }
+
+  .section-our-works {
+    padding: 95px 16%;
+
+    .ourworks-content {
+      padding: 0 10%;
     }
 
-    main {
-        .description {
-            .description-element {
-                margin: 0 15px;
+    .ourworks-image {
+      .image-group {
+        .image-element {
+          img {
+            width: 150px;
+            height: 200px;
+          }
+
+          .show-project {
+            padding: 0 10%;
+
+            .project-name {
+              font-size: 16px;
             }
+
+            p {
+              margin: 0;
+              font-size: 12px;
+            }
+
+            button {
+              padding: 0 20px;
+              font-size: 12px;
+            }
+          }
         }
+      }
+    }
+  }
 
-        .ourworks {
-            padding: 95px 16%;
+  .avatar {
+    .carousel-inner {
+      padding: 0 12%;
 
-            .ourworks-content {
-                padding: 0 10%;
-            }
-            
-            .ourworks-image {
-                .image-group {
-                    .image-element {
-                        img {
-                            width: 150px;
-                            height: 200px;
-                        }
-
-                        .show-project {
-                            padding: 0 10%;
-    
-                            .project-name {
-                                font-size: 16px;
-                            }
-
-                            p {
-                                margin: 0;
-                                font-size: 12px;
-                            }
-
-                            button {
-                                padding: 0 20px;
-                                font-size: 12px;
-                            }
-                        }
-                    }
-
-                    
-                }
-            }
-        }
-
-        .avatar {
-            .carousel-inner {
-                padding: 0 12%;
-
-                p {
-                    font-size: 16px;
-                }
-            }
-
-            .carousel-control-prev {
-                left: 0;
-            }
-
-            .carousel-control-next {
-                right: 0;
-            }
-
-
-        }
-
-        .ourteam {
-            .ourteam-content {
-                padding: 0 10%;
-            }
-
-            .ourteam-image {
-                .image-group {
-                    .image-group-element {
-                        margin: 0 10px;
-
-                        >img {
-                            width: 150px;
-                            height: 150px;
-                        }
-
-                        .ourteam-name {
-                            font-size: 18px;
-                        }
-
-                        p {
-                            padding: 0;
-                        }
-                    }
-                }
-            }
-        }
-
-        .hireus {
-            padding: 95px 10%;
-
-            .hireus-content {
-                padding: 0 10%;
-            }
-        }
+      p {
+        font-size: 16px;
+      }
     }
 
-    .footer {
-        .footer-content {
-            span {
-                font-size: 12px;
-            }
-        }
+    .carousel-control-prev {
+      left: 0;
     }
+
+    .carousel-control-next {
+      right: 0;
+    }
+  }
+
+  .section-our-team {
+    .ourteam-content {
+      padding: 0 10%;
+    }
+
+    .ourteam-image {
+      .image-group {
+        flex-wrap: wrap;
+
+        .image-group-element {
+          padding: 20px;
+          margin: 10px 0;
+          border-bottom: 1px solid gainsboro;
+
+          .ourteam-name {
+            font-size: 18px;
+          }
+
+          p {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .section-hire-us {
+    padding: 95px 10%;
+
+    .hireus-content {
+      padding: 0 10%;
+    }
+  }
+}
+
+.footer {
+  .footer-content {
+    span {
+      font-size: 12px;
+    }
+
+    .copyright {
+      font-size: 12px;
+    }
+  }
 }
 
 //Responsive SP
 @media screen and (max-width: 767px) {
-    .header {
-        padding: 51px 5% 240px;
+  .section-top-page {
+    padding: 51px 5% 240px;
 
-        .header-content {
-            .title {
-                padding: 50px 10%;
+    .toppage-content {
+      .title {
+        padding-top: 50px 0;
 
-                h1 {
-                    font-size: 30px;
-                }
+        .title-content {
+          font-size: 30px;
 
-                span {
-                    font-size: 30px;
-                }
-            }
-
-            .header-content-details {
-                padding: 0;
-
-                p {
-                    font-size: 14px;
-                }
-            }
-
-            .header-content-button { 
-                display: flex;
-                flex-direction: column;
-                padding: 0 50px;
-                align-items: center;
-
-                .hire-us {
-                    padding: 19px 50px;
-                    margin-bottom: 10px;
-                }
-
-                .our-works {
-                    padding: 19px 30px;
-                }
-            }
+          span {
+            font-size: 30px;
+          }
         }
+      }
+
+      .toppage-content-details {
+        padding: 0;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .toppage-content-button {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        align-items: center;
+
+        .hire-us {
+          padding: 19px 50px;
+          margin-bottom: 10px;
+          border: 1px solid gainsboro;
+          margin-left: 10px;
+        }
+
+        .our-works {
+          padding: 19px 30px;
+        }
+      }
+    }
+  }
+
+  .section-description {
+    flex-direction: column;
+
+    .description-element {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .subscribe {
+    padding: 85px 10%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+
+    input {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .section-our-works {
+    padding: 95px 16%;
+
+    .ourworks-content {
+      padding: 0;
+
+      p {
+        font-size: 12px;
+      }
     }
 
-    main {
-        .description {
-            flex-direction: column;
+    .ourworks-image {
+      .image-group {
+        flex-wrap: wrap;
 
-            .description-element {
-                p {
-                    font-size: 12px;
-                }
-            }
+        .image-element {
+          img {
+            width: 200px;
+            height: 250px;
+          }
         }
+      }
+    }
+  }
 
-        .subscribe {
-            padding: 85px 10%;
-            display: flex;
-            flex-direction: column;
-            background-size: cover;
+  .avatar {
+    .carousel-inner {
+      padding: 0 12%;
 
-            input {
-                width: 100%;
-                margin: 0;
-                margin-bottom: 20px;
-            }
-        }
-
-        .ourworks {
-            padding: 95px 16%;
-
-            .ourworks-content {
-                padding: 0;
-
-                p {
-                    font-size: 12px;
-                }
-            }
-        }
-
-        .avatar {
-            .carousel-inner {
-                p {
-                    font-size: 12px;
-                    padding: 0 20px;
-                }
-            }
-        }
-
-        .ourteam {
-            padding: 95px 10% !important;
-
-            .ourteam-title {
-                h4 {
-                    font-size: 30px;
-                }
-
-                span {
-                    font-size: 30px;
-                }
-            }
-
-            .ourteam-content {
-                p {
-                    font-size: 12px;
-                }
-            }
-
-            .ourteam-image {
-                .image-group {
-                    flex-wrap: wrap;
-
-                    .image-group-element {
-                        padding: 20px;
-                        margin: 10px 0;
-                        border-bottom: 1px solid gainsboro;
-                        p {
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .hireus {
-            padding: 95px 10%;
-
-            .hireus-title {
-                h5 {
-                    font-size: 30px;
-                }
-
-                span {
-                    font-size: 30px;
-                }
-            }
-
-            .hireus-content {
-                p {
-                    font-size: 12px;
-                }
-            }
-
-            .hireus-input {
-                margin-top: 50px;
-
-                .group-input {
-                    flex-direction: column;
-
-                    .mail {
-                        margin-right: 0;
-                        margin-bottom: 15px;
-                    }
-
-                    input {
-                        padding: 5px 15px;
-                    }
-                }
-
-                .message {
-                    padding: 15px 0 100px 15px;
-                }
-
-                .hireus-input-bottom {
-                    flex-direction: column;
-
-                    .icon {
-                        margin-top: 15px;
-
-                        img {
-                            margin: 0 2px;
-                            width: 30px;
-                            height: 30px;
-                        }
-                    }
-                }
-            }
-        }
+      p {
+        font-size: 12px;
+        padding: 0 20px;
+      }
     }
 
-    .footer {
-        padding: 50px 5%;
-    
-        .footer-content {
-            span {
-                font-size: 8px;
-            }
-        }
+    .carousel-control-prev {
+      left: 0;
     }
-    
+
+    .carousel-control-next {
+      right: 0;
+    }
+  }
+
+  .section-our-team {
+    padding: 95px 10% !important;
+
+    .ourteam-title {
+      .title-content {
+        font-size: 30px;
+
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .ourteam-content {
+      padding: 0 10%;
+      
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .ourteam-image {
+      .image-group {
+        flex-wrap: wrap;
+
+        .image-group-element {
+          padding: 20px;
+          margin: 10px 0;
+          border-bottom: 1px solid gainsboro;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-hire-us {
+    padding: 95px 10%;
+
+    .hireus-title {
+      .title-content {
+        font-size: 30px;
+
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .hireus-content {
+      padding: 0 10%;
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .hireus-input {
+      margin-top: 50px;
+
+      .group-input {
+        flex-direction: column;
+
+        .mail {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+
+        input {
+          padding: 5px 15px;
+        }
+      }
+
+      .hireus-input-bottom {
+        flex-direction: column;
+
+        .icon {
+          margin-top: 15px;
+
+          a {
+            img {
+              margin: 0 2px;
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 50px 5%;
+
+    .footer-content {
+      span {
+        font-size: 10px;
+      }
+
+      .copyright {
+        font-size: 10px;
+      }
+    }
+  }
 }
